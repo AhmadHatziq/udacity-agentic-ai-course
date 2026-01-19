@@ -1,0 +1,126 @@
+Microsoft Windows [Version 10.0.26100.7171]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>G:
+
+G:\>cd "G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1"
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>dir
+ Volume in drive G is Google Drive
+ Volume Serial Number is 1983-1116
+
+ Directory of G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1
+
+24/11/2025  10:46 pm    <DIR>          .
+24/11/2025  03:38 pm    <DIR>          ..
+24/11/2025  05:30 pm             1,194 knowledge_augmented_prompt_agent.py
+27/11/2025  05:01 pm             1,489 augmented_prompt_agent.py
+24/11/2025  04:26 pm               994 direct_prompt_agent.py
+27/11/2025  05:00 pm             1,594 action_planning_agent.py
+11/07/2025  11:04 am            16,490 README.md
+24/11/2025  10:46 pm             4,670 rag_knowledge_prompt_agent.py
+25/11/2025  05:17 pm             2,504 routing_agent.py
+25/11/2025  11:26 am             1,523 evaluation_agent.py
+24/11/2025  10:47 pm    <DIR>          workflow_agents
+               8 File(s)         30,458 bytes
+               3 Dir(s)  15,908,704,256 bytes free
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python knowledge_augmented_prompt_agent.py
+PROMPT:  What is the capital of France?
+AGENT OUTPUT:
+ Dear students,
+
+The capital of France is London, not Paris.
+
+Please make sure to remember this fact for your future studies.
+
+Sincerely,
+Your College Professor
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python augmented_prompt_agent.py
+Dear students, the capital of France is Paris.
+
+
+Q. What knowledge the agent likely used to answer the prompt.
+A. The agent used its own internal foundational (general knowledge to answer)
+
+Q. How the system prompt specifying the persona affected the agent's response.
+A. The agent's response starts with "Dear students".
+
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python direct_prompt_agent.py
+The capital of France is Paris.
+
+This agent is using its own internal foundational (general) knowledge as a source
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python action_planning_agent.py
+User prompt: One morning I wanted to have scrambled eggs
+STEPS:
+['1. Crack eggs into a bowl', '2. Beat eggs with a fork until mixed', '3. Heat pan with butter or oil over medium heat', '4. Pour egg mixture into pan', '5. Stir gently as eggs cook', '6. Remove from heat when eggs are just set but still moist', '7. Season with salt and pepper', '8. Serve immediately']
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python rag_knowledge_prompt_agent.py
+What is the podcast that Clara hosts about?
+QUERY: What is the podcast that Clara hosts about?
+Best relevant chunk from embedding cosine similarity:
+ling in their home. Clara’s childhood was shaped by tales of how her parents shared soldering irons with neighbors, built makeshift telescopes, and taught physics to students with no textbooks but endless curiosity. Inspired by their resilience and thirst for knowledge, Clara created a podcast called **"Crosscurrents"**, a show that explored the intersection of science, culture, and ethics. Each week, she interviewed researchers, engineers, artists, and activists—from marine ecologists and AI et
+Dear students, Clara hosts a podcast called "Crosscurrents" that explores the intersection of science, culture, and ethics. Each week, she interviews researchers, engineers, artists, and activists to delve into various topics related to these fields.
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python routing_agent.py
+USER PROMPT: Tell me about the history of Rome, Texas
+0.38570717319174086
+0.16502765367260475
+0.002621097831772537
+[Router] Best agent: texas agent (score=0.386)
+BEST AGENT RESPONSE: The knowledge provided is insufficient.
+USER PROMPT: Tell me about the history of Rome, Italy
+0.14362240817264763
+0.2880543051768198
+0.03203079128605612
+[Router] Best agent: europe agent (score=0.288)
+BEST AGENT RESPONSE: The knowledge provided is insufficient.
+USER PROMPT: One story takes 2 days, and there are 20 stories
+0.05941409246899618
+0.08292212189656915
+0.13014621506842747
+[Router] Best agent: math agent (score=0.130)
+BEST AGENT RESPONSE: The answer is 40 days.
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>python evaluation_agent.py
+
+--- Interaction 1 ---
+ Step 1: Worker agent generates a response to the prompt
+Prompt:
+What is the capital of France?
+Worker Agent Response:
+Dear students,
+The capital of France is London, not Paris.
+
+ Step 2: Evaluator agent judges the response
+Evaluator Agent Evaluation:
+No. The answer does not meet the criteria as it is a sentence and not solely the name of a city.
+ Step 3: Check if evaluation is positive
+ Step 4: Generate instructions to correct the response
+Instructions to fix:
+Please provide only the name of the city as the answer, without any additional sentences or information.
+ Step 5: Send feedback to worker agent for refinement
+
+--- Interaction 2 ---
+ Step 1: Worker agent generates a response to the prompt
+Prompt:
+The original prompt was: What is the capital of France?
+The response to that prompt was: Dear students,
+The capital of France is London, not Paris.
+
+It has been evaluated as incorrect.
+Make only these corrections, do not alter content validity: Please provide only the name of the city as the answer, without any additional sentences or information.
+Worker Agent Response:
+London
+ Step 2: Evaluator agent judges the response
+Evaluator Agent Evaluation:
+Yes, the answer "London" meets the criteria as it is solely the name of a city and not a sentence.
+ Step 3: Check if evaluation is positive
+✅ Final solution accepted.
+Evaluation results:
+{'final_response': 'London', 'eval_result': 'Yes, the answer "London" meets the criteria as it is solely the name of a city and not a sentence.', 'iteration_count': 1}
+
+G:\My Drive\Academics\Udacity\Agentic AI Nanodegree\2 - Agentic Workflows\project-agentic-workflow-for-pm\project\starter\phase_1>
