@@ -1,0 +1,43 @@
+{
+  "as_of_date": "2025-04-01",
+  "cash_balance": 45059.7,
+  "inventory_value": 4940.3,
+  "total_assets": 50000.0,
+  "inventory_summary": [
+    { "item_name": "Paper plates", "stock": 748, "unit_price": 0.1, "value": 74.8 },
+    { "item_name": "100 lb cover stock", "stock": 636, "unit_price": 0.5, "value": 318.0 },
+    { "item_name": "Glossy paper", "stock": 587, "unit_price": 0.2, "value": 117.4 },
+    {
+      "item_name": "Rolls of banner paper (36-inch width)",
+      "stock": 546,
+      "unit_price": 2.5,
+      "value": 1365.0
+    },
+    { "item_name": "Photo paper", "stock": 423, "unit_price": 0.25, "value": 105.75 },
+    { "item_name": "Cardstock", "stock": 595, "unit_price": 0.15, "value": 89.25 },
+    { "item_name": "Colored paper", "stock": 788, "unit_price": 0.1, "value": 78.8 },
+    { "item_name": "80 lb text paper", "stock": 249, "unit_price": 0.4, "value": 99.6 },
+    {
+      "item_name": "Large poster paper (24x36 inches)",
+      "stock": 699,
+      "unit_price": 1.0,
+      "value": 699.0
+    },
+    { "item_name": "Table covers", "stock": 736, "unit_price": 1.5, "value": 1104.0 },
+    { "item_name": "Butcher paper", "stock": 365, "unit_price": 0.1, "value": 36.5 },
+    { "item_name": "Kraft paper", "stock": 493, "unit_price": 0.1, "value": 49.3 },
+    { "item_name": "Banner paper", "stock": 793, "unit_price": 0.3, "value": 237.9 },
+    { "item_name": "Presentation folders", "stock": 389, "unit_price": 0.5, "value": 194.5 },
+    { "item_name": "Patterned paper", "stock": 548, "unit_price": 0.15, "value": 82.2 },
+    { "item_name": "A4 paper", "stock": 272, "unit_price": 0.05, "value": 13.6 },
+    { "item_name": "Invitation cards", "stock": 526, "unit_price": 0.5, "value": 263.0 },
+    { "item_name": "Crepe paper", "stock": 234, "unit_price": 0.05, "value": 11.7 }
+  ],
+  "top_selling_products": [
+    {
+      "item_name": null,
+      "total_units": null,
+      "total_revenue": 50000.0
+    }
+  ]
+}
