@@ -1,0 +1,66 @@
+{
+  "cloudrift": {
+    "provider_name": "cloudrift",
+    "url": "https://www.cloudrift.ai/inference",
+    "domain": "www.cloudrift.ai",
+    "cached_at": "2026-01-12T09:27:49.644Z",
+    "scrape_time": "2026-01-12T09:46:00.696533",
+    "title": "AI Inference API • Low-Cost Llama 4 & DeepSeek Models | Cloudrift",
+    "description": "Stream Llama 4 Maverick, DeepSeek-V3, and other high-performance language models via Cloudrift’s pay-as-you-go inference API. No queues, no GPU setup—scale instantly and only pay for what you use.",
+    "success": true,
+    "formats": [
+      "markdown"
+    ],
+    "content_files": {
+      "markdown": "scraped_content/cloudrift_markdown.txt"
+    }
+  },
+  "deepinfra": {
+    "provider_name": "deepinfra",
+    "url": "https://deepinfra.com/pricing",
+    "domain": "deepinfra.com",
+    "cached_at": "2026-01-12T09:27:53.565Z",
+    "scrape_time": "2026-01-12T09:46:02.117742",
+    "title": "Simple Pricing | Machine Learning Infrastructure | Deep Infra",
+    "description": "We provide only pay-what-you-use pricing with no long-term contracts or upfront costs for our machine learning models and infrastructure. Learn more!",
+    "success": true,
+    "formats": [
+      "markdown"
+    ],
+    "content_files": {
+      "markdown": "scraped_content/deepinfra_markdown.txt"
+    }
+  },
+  "fireworks": {
+    "provider_name": "fireworks",
+    "url": "https://fireworks.ai/pricing#serverless-pricing",
+    "domain": "fireworks.ai",
+    "cached_at": "2026-01-12T09:27:58.230Z",
+    "scrape_time": "2026-01-12T09:46:03.327057",
+    "title": "Fireworks - Pricing",
+    "description": "Choose the plan thats right for you.",
+    "success": true,
+    "formats": [
+      "markdown"
+    ],
+    "content_files": {
+      "markdown": "scraped_content/fireworks_markdown.txt"
+    }
+  },
+  "groq": {
+    "provider_name": "groq",
+    "url": "https://groq.com/pricing",
+    "domain": "groq.com",
+    "cached_at": "2026-01-12T09:28:02.199Z",
+    "scrape_time": "2026-01-12T09:46:04.488825",
+    "title": "Groq On-Demand Pricing for Tokens-as-a-Service | Groq is fast, low cost inference.",
+    "description": "Groq powers leading openly-available AI models. View the pricing of our core models including GPT-OSS, Kimi K2, Qwen3 32B, and more.",
+    "success": true,
+    "formats": [
+      "markdown"
+    ],
+    "content_files": {
+      "markdown": "scraped_content/groq_markdown.txt"
+    }
+  }
+}
