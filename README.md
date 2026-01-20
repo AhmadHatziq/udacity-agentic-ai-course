@@ -75,6 +75,7 @@ There are 5 projects for this nanodegree:
 ## Core Idea (Architecture)
 - Uses `smolagents ToolCallingAgent` + tool functions and a SQLite backend to process “customer quote requests”.
 - The system parses messy natural-language orders into a validated schema, checks inventory, decides restocking, generates quotes, logs transactions, and produces a financial report.
+- Uses cosine similarity to find similar customer orders (to decide discounting logic). 
 
 ## Key Components 
 - `project_starter.py` (main): huge single-file “app” containing:
