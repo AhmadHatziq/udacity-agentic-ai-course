@@ -2,11 +2,11 @@
 Project files used for the Agentic AI Nanodegree from Udacity 
 
 There are 5 projects for this nanodegree: 
-1. [Trip Planner Agent (ReACT)](./project-trip-planner/)
-2. Agentic Workflow for Project Management (Multi Agent Workflow with Orchestration)
-3. Video Game Agent with access to RAG tool, uses state machines
-4. Multi-Agent Workflow for a Paper Company, uses cosine similarity to find similar sales quotes 
-5. Chatbot for scraping websites and obtaining LLM pricing data (MCP Server Tools, Client)
+1. [Trip Planner Agent (ReACT)](./project-trip-planner/project_trip_planner.md)
+2. [Agentic Workflow for Project Management (Multi Agent Workflow with Orchestration)](./project-agentic-workflow-for-pm/project/project_management_agentic_project.md)
+3. [Video Game Agent with access to RAG tool, uses state machines](./project-udaplay/project_udaplay.md)
+4. [Multi-Agent Workflow for a Paper Company, uses cosine similarity to find similar sales quotes](./project-paper-company/project_paper_company.md) 
+5. [Chatbot for scraping websites and obtaining LLM pricing data (MCP Server Tools, Client)](./project-pricescout/developer_guide.md)
 
 # 1) Trip Planner Agent 
 - A notebook project building a trip-planning agent with constraints + evaluatio + ReACT-style loop 
